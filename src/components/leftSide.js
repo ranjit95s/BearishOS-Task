@@ -11,15 +11,17 @@ const LeftSide = () => {
 
     const [over,setOver]=React.useState(false);
 
-        let buttonstyle={
+    let buttonstyle={
         backgroundColor:'',
         display: "flex",
         textAlign: "start",
     }
+    let bg = {
+        backgroundColor: "rgb(221, 220, 220)",
+    }
     
     if(over){
         buttonstyle.backgroundColor="#5EE2A0";
-        
     }
     else{
         buttonstyle.backgroundColor='';
@@ -34,7 +36,7 @@ const LeftSide = () => {
         marginTop: "15px",
         marginBottom: "15px",
     };
-        const searchStyle = {
+    const searchStyle = {
         display: "flex",
         textAlign: "start",
         fontSize: "15px",
@@ -45,6 +47,7 @@ const LeftSide = () => {
         flexDirection: "row",
         justifyContent: "space-between",
     };
+    
     return (
         <div className='left'>
             <div className="leftInner" >
@@ -52,7 +55,7 @@ const LeftSide = () => {
                     <h2> <span> <img src={logoM} alt="" /> </span> Bearish OS </h2>
                     <img src={dcb} alt="" />
                 </div>
-                <div className="search" style={searchStyle}>
+                <div className="search" style={{...searchStyle,...bg}}>
                     <h2> <span> <img src={s} alt="" /> </span> Search Bearish OS </h2>
                 </div>
                 <div tabindex="1" className="search focus"  style={{...searchStyle,...buttonstyle}} onMouseOver={()=>setOver(true)} 
