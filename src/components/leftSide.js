@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './leftSide.css';
 import h from './img/h.png';
 import cf from './img/cf.png';
@@ -8,51 +8,66 @@ import m from './img/m.png';
 import s from './img/s.png';
 import v from './img/v.png';
 const LeftSide = () => {
+
+    const [over,setOver]=React.useState(false);
+
+        let buttonstyle={
+        backgroundColor:'',
+        display: "flex",
+        textAlign: "start",
+    }
+    
+    if(over){
+        buttonstyle.backgroundColor="#5EE2A0";
+        
+    }
+    else{
+        buttonstyle.backgroundColor='';
+    }
+
+    const myStyle = {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        padding: "2px",
+        fontSize: "15px",
+        marginTop: "15px",
+        marginBottom: "15px",
+    };
+        const searchStyle = {
+        display: "flex",
+        textAlign: "start",
+        fontSize: "15px",
+        marginTop: "10px",
+        cursor: "pointer",
+        padding: "1px",
+        borderRadius: "3px",
+        flexDirection: "row",
+        justifyContent: "space-between",
+    };
     return (
         <div className='left'>
-            <div className="leftInner">
-                <div className="al al3">
-                    <div className="al2">
-                        <span><img src={logoM} alt="d" srcset="" /></span>
-                        Bearish OS
-                    </div>
-                    <div className="al2">
-                        <img src={dcb} alt="" srcset="" />
-                    </div>
+            <div className="leftInner" >
+                <div className="logo" style={myStyle}>
+                    <h2> <span> <img src={logoM} alt="" /> </span> Bearish OS </h2>
+                    <img src={dcb} alt="" />
                 </div>
-                <ul>
-                    <li tabIndex="1" className="firstC">
-                        <span><img src={s} alt="d" srcset="" /></span>
-                        Search Bearish OS
-                    </li>
-                    <li tabIndex="2">
-                        <span><img src={h} alt="d" srcset="" /></span>
-                        Dashboard
-                    </li>
-                    <li tabIndex="3">
-                        <div className="al">
-                            <div className="al2">
-                                <span><img src={v} alt="d" srcset="" /></span>
-                                Video Calls
-                            </div>
-                            <div className="al2">
-                                <img src={cf} alt="d" srcset="" />
-                            </div>
-                        </div>
-                    </li>
-                    <li tabIndex="4">
-                        <div className="al">
-                            <div className="al2">
-                                <span><img src={m} alt="d" srcset="" /></span>
-                                Inbox
-                            </div>
-                            <div className="al2">
-                                <img src={cf} alt="d" srcset="" />
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                <div className="search" style={searchStyle}>
+                    <h2> <span> <img src={s} alt="" /> </span> Search Bearish OS </h2>
+                </div>
+                <div tabindex="1" className="search focus"  style={{...searchStyle,...buttonstyle}} onMouseOver={()=>setOver(true)} 
+      onMouseOut={()=>setOver(false)}>
+                    <h2> <span> <img src={h} alt="" /> </span> Dashboard </h2>
+                </div>
+                <div className="logo" style={searchStyle}>
+                    <h2> <span> <img src={v} alt="" /> </span> Video Calls </h2>
+                    <img src={cf} alt="" />
+                </div>
+                <div className="logo" style={searchStyle}>
+                    <h2> <span> <img src={m} alt="" /> </span> Inbox </h2>
+                    <img src={cf} alt="" />
+                </div>
+            </div>  
         </div>
     )
 }
