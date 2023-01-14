@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/BearishOS-Task/static/css/main.db61db8f.css",
-    "main.js": "/BearishOS-Task/static/js/main.49609125.js",
+    "main.css": "/BearishOS-Task/static/css/main.238c6d00.css",
+    "main.js": "/BearishOS-Task/static/js/main.c6f1247f.js",
     "static/js/787.4e8123d8.chunk.js": "/BearishOS-Task/static/js/787.4e8123d8.chunk.js",
+    "static/media/source-serif-pro-all-400-normal.woff": "/BearishOS-Task/static/media/source-serif-pro-all-400-normal.a8a93831984ffd4e8f7b.woff",
+    "static/media/source-serif-pro-latin-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-latin-400-normal.f5b1bc3ff0438b15298d.woff2",
+    "static/media/source-serif-pro-latin-ext-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-latin-ext-400-normal.eb9ad12b9dda04fce5af.woff2",
+    "static/media/source-serif-pro-cyrillic-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-cyrillic-400-normal.01139b701f1eb2a6958d.woff2",
+    "static/media/source-serif-pro-greek-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-greek-400-normal.5f27fe26decc1385118e.woff2",
+    "static/media/source-serif-pro-cyrillic-ext-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-cyrillic-ext-400-normal.a16446d373777df62a7e.woff2",
+    "static/media/source-serif-pro-vietnamese-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-vietnamese-400-normal.8fb8eabe508ffcd906af.woff2",
     "index.html": "/BearishOS-Task/index.html",
-    "main.db61db8f.css.map": "/BearishOS-Task/static/css/main.db61db8f.css.map",
-    "main.49609125.js.map": "/BearishOS-Task/static/js/main.49609125.js.map",
+    "main.238c6d00.css.map": "/BearishOS-Task/static/css/main.238c6d00.css.map",
+    "main.c6f1247f.js.map": "/BearishOS-Task/static/js/main.c6f1247f.js.map",
     "787.4e8123d8.chunk.js.map": "/BearishOS-Task/static/js/787.4e8123d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db61db8f.css",
-    "static/js/main.49609125.js"
+    "static/css/main.238c6d00.css",
+    "static/js/main.c6f1247f.js"
   ]
 }
