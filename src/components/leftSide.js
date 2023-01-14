@@ -1,13 +1,14 @@
 import React from 'react';
 import './leftSide.css';
+import "@fontsource/source-serif-pro";
 // Importing Images
-import h from './img/h.png';
-import cf from './img/cf.png';
+import h   from './img/h.png';
+import cf  from './img/cf.png';
 import dcb from './img/dcb.png';
-import logoM from './img/logoM.png';
-import m from './img/m.png';
-import s from './img/s.png';
-import v from './img/v.png';
+import lg  from './img/logoM.png';
+import m   from './img/m.png';
+import s   from './img/s.png';
+import v   from './img/v.png';
 
 const LeftSide = () => {
 
@@ -29,29 +30,31 @@ const LeftSide = () => {
     else
         buttonstyle.backgroundColor='';
     
-
     // Adding CSS using React Method
     const leftStyle = {
-        width:"25%", marginLeft: "20px", 
-        marginTop: "20px", fontFamily:"sans-serif",
+        width:"300px", marginLeft: "20px", 
+        marginTop: "20px", fontFamily:"Source Serif Pro",
+        fontWeight: "lighter", wordSpacing: "0px",
+        letterSpacing: "0px",
     };
     const imgStyle = {
-        width: "23px", position: "relative",
-        top: "4px", marginRight: "5px",   
+        width: "25px",height:"22px", position: "relative",
+        top: "4.5px", marginRight: "3px", 
     };
     const myStyle = {
         display: "flex", flexDirection: "row",
-        justifyContent: "space-between", padding: "2px",
-        fontSize: "15px", marginTop: "15px", marginBottom: "15px",
+        justifyContent: "space-between", padding: "1px",
+        fontSize: "18px", marginTop: "15px", marginBottom: "15px",
     };
     const searchStyle = {
         display: "flex", textAlign: "start",
-        fontSize: "15px", marginTop: "10px",
-        cursor: "pointer", padding: "1px",
-        borderRadius: "3px", flexDirection: "row", justifyContent: "space-between",
+        fontSize: "18px", marginTop: "10px",
+        cursor: "pointer", padding: "1.2px",
+        borderRadius: "5px", flexDirection: "row", justifyContent: "space-between",
     };
     let bg = {
-        backgroundColor: "rgb(221, 220, 220)",
+        backgroundColor: "#f3f3f3",
+        
     }
     
     return (
@@ -59,26 +62,26 @@ const LeftSide = () => {
             <div className="leftInner" >
                 {/* Main Logo */}
                 <div className="logo" style={myStyle}>
-                    <h2> <span> <img style={imgStyle} src={logoM} alt="" /> </span> Bearish OS </h2>
+                    <div> <span> <img style={imgStyle} src={lg} alt="" /> </span> Bearish OS </div>
                     <img style={imgStyle} src={dcb} alt="" />
                 </div>
                 {/* Search Bar */}
                 <div className="search" style={{...searchStyle,...bg}}>
-                    <h2> <span> <img style={imgStyle} src={s} alt="" /> </span> Search Bearish OS </h2>
+                    <div> <span> <img style={imgStyle} src={s} alt="" /> </span> Search Bearish OS </div>
                 </div>
                 {/* DashBoard Navigation | using reactJs NavLink- 'isActive' method would be much easier to add static background color */}
-                <div tabindex="1" className={style}  style={{...searchStyle,...buttonstyle}} 
+                <div tabIndex="1" className={style}  style={{...searchStyle,...buttonstyle}} 
                     onMouseOver={()=>setOver(true)} onMouseOut={()=>setOver(false)} onClick={changeStyle} >
-                    <h2> <span> <img style={imgStyle} src={h} alt="" /> </span> Dashboard </h2>
+                    <div> <span> <img style={imgStyle} src={h} alt="" /> </span> Dashboard </div>
                 </div>
                 {/* Video Calls */}
                 <div className="logo" style={searchStyle}>
-                    <h2> <span> <img style={imgStyle} src={v} alt="" /> </span> Video Calls </h2>
+                    <div> <span> <img style={imgStyle} src={v} alt="" /> </span> Video Calls </div>
                     <img style={imgStyle} src={cf} alt="" />
                 </div>
                 {/* Inbox */}
                 <div className="logo" style={searchStyle}>
-                    <h2> <span> <img style={imgStyle} src={m} alt="" /> </span> Inbox </h2>
+                    <div> <span> <img style={imgStyle} src={m} alt="" /> </span> Inbox </div>
                     <img style={imgStyle} src={cf} alt="" />
                 </div>
             </div>  
