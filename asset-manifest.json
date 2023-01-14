@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BearishOS-Task/static/css/main.db61db8f.css",
+    "main.js": "/BearishOS-Task/static/js/main.49609125.js",
+    "static/js/787.4e8123d8.chunk.js": "/BearishOS-Task/static/js/787.4e8123d8.chunk.js",
+    "index.html": "/BearishOS-Task/index.html",
+    "main.db61db8f.css.map": "/BearishOS-Task/static/css/main.db61db8f.css.map",
+    "main.49609125.js.map": "/BearishOS-Task/static/js/main.49609125.js.map",
+    "787.4e8123d8.chunk.js.map": "/BearishOS-Task/static/js/787.4e8123d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db61db8f.css",
+    "static/js/main.49609125.js"
+  ]
+}
