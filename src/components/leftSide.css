@@ -1,22 +1,8 @@
-.left{
-    width:25%;
-    margin-left: 20px;
-    margin-top: 20px;
-    font-family:sans-serif;
-}
-
 h2 {
     font-weight: normal !important;
 }
 
-.leftInner img {
-width: 23px;
-position: relative;
-top: 4px;
-margin-right: 5px;
-}
-
-.leftInner .focus:focus-within{
+.focus:focus{
     background-color: #5EE2A0;
 }
 
