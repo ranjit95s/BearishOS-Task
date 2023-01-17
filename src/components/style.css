@@ -1,0 +1,269 @@
+.boxStyle {
+    font-family:Source Serif Pro;
+    top: 33px;
+    left: 24px;
+    position:relative;
+    width: 300px;
+    height: 275px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+
+.inStyle {
+    font-family:Source Serif Pro Bold;
+    width: 250px;
+    height: 40px;
+    margin:auto;
+}
+
+.signIn  {
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    opacity: 1;
+    width:100%;
+    background:#ffffff;
+    cursor:pointer;
+    padding:8px;
+    margin-top:15px;
+    display: flex; 
+    flex-direction: row;
+    position:relative;
+    align-items: center;
+}
+
+.signSec {
+    margin-top:20px;
+}
+
+.headerStyle {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:20px;
+    font-weight: bold;
+}
+
+.textLStyle {
+    font-size : 18px;
+    font-family:Source Serif Pro;
+    color:#000000;
+}
+
+.textSStyle  {
+    font-size : 15px;
+    font-family:Source Serif Pro;
+    font-weight: 600;
+}
+
+.inText  {
+    color: #000000;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+
+.spanStyle {
+    position: absolute;
+    right : 12px;
+    padding:2px 3.5px;
+    background: #5EE2A0 0% 0% no-repeat padding-box;
+    border: 1px solid #5EE2A0;
+    border-radius: 5px;
+    top:12px;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 1);
+    font-size:11px;
+}
+
+.info {
+    font: normal normal 300 11px/15px Source Serif Pro;
+    margin-top:15px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.inputStyle input, .hoverB input {
+    border: none;
+    outline:none;
+    background: none;
+    width: 100%;
+    font-size : 15px;
+    font-family:Source Serif Pro;
+    color:#000000;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.hoverB > input {
+    font-size : 18px;
+    font-weight: 500;
+    margin-bottom:15px;
+    padding:7px !important;
+}
+
+.inputStyle input[type="text"]::placeholder {
+    font-size : 15px;
+    font-family:Source Serif Pro;
+    color:#000000;
+    /* opacity: 0.5; */
+    font-weight: 600;
+    text-align: center;
+}
+
+.NickStyle input[type="text"]::placeholder , .hoverB input[type="text"]::placeholder{
+    text-align: left;
+}
+
+.submitT {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    margin:10px auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitT span {
+    opacity: 0.5;
+}
+
+.btns {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+.btns .ref button, .btnStyles button {
+    margin-right: 12px;
+    background:  rgba(127, 218, 172, 0.4) no-repeat padding-box;
+    color: rgb(42, 150, 96);
+}
+
+.btns .out button {
+    background:  rgba(240, 41, 41, 0.4) no-repeat padding-box;
+    color: rgb(185, 1, 1);
+}
+.btns button > span, .btnStyles button, .hidebody label, .datetimes  {
+    font-size: 15px;
+    font-family:Source Serif Pro;
+    font-weight: 600;
+    /* color: rgba(255, 0, 0); */
+    opacity:1 !important;
+}
+
+.btns .btnIn button {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #E9EDF2;
+    border-radius: 5px;
+}
+
+.composeBody input, .dropdown input{
+    border: none;
+    outline:none;
+    background: none;
+    width: 100%;
+    font-size : 15px;
+    font-family:Source Serif Pro;
+    color:#161616;
+    /* opacity: 0.5; */
+    margin-left: 5px;
+    /* font-weight: 600; */
+}
+.dropdown input {
+    margin-left: 0px;
+
+}
+.composeBody textarea{
+    width:100% !important;
+    height:302px;
+    border: none;
+    outline:none;
+    background: none;
+    resize: none;
+}
+
+.spanInv {
+    display:flex;
+}
+
+.spanInv > div {
+    margin-left: 4px;
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.alpha , .mini , .cross , .attach {display: none;}
+
+.spanHide {
+    display: none !important;
+}
+
+.spanShow {
+    display: block;
+}
+
+.halpha:hover + .alpha, .hmini:hover + .mini, .hcross:hover + .cross, .hattach:hover + .attach {
+    display: block !important ;
+}
+
+.spanVis {
+    visibility:hidden;
+}
+
+.dropdown {
+    width: 253px;
+    height: max-content;
+    margin-top: 40px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    opacity: 1;
+    font: normal normal 300 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.userData {
+    padding: 5px 10px;
+}
+
+.user {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.pic {
+    margin-right: 10px;
+}
+
+.em {
+    font: normal normal 300 11px/15px Source Serif Pro;
+}
+.bg{
+    background-color: #5EE2A0;
+    border-radius: 5px;
+}
+
+.main2{
+    margin-bottom: 5rem;
+    background: #c5c3c2;
+    margin-top: 2rem;
+    display: flex;
+    padding: 1rem;
+}

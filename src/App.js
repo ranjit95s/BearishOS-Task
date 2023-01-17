@@ -1,11 +1,13 @@
 // import logo from './logo.svg';
-import LeftSide from './components/leftSide'
+import EmailComp from './container/EmailComp'
+import EmailComp2 from './container/EmailComp2'
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
-      <LeftSide/>
+      <EmailComp />
+      <EmailComp2 />
     </div>
   );
 }
