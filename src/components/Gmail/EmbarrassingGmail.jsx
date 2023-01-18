@@ -1,10 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
-import Close from './img/Close.png';
-import sem from './img/sem.png';
-import ex from './img/smallEx.png';
-import sol from './img/sol.png';
+import Close from '../img/Close.png';
+import sem from '../img/sem.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -12,17 +10,17 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
-import sty from './sty.module.css';
+import sty from '../sty.module.css';
 
-export default function FirstConnect() {
+export default function EmbarrassingGmail() {
     return (
         <>
         <StyledEngineProvider injectFirst>
-            <Box component="firstConnect" className={cx(sty.boxStyle)}>
+            <Box component="EmbarrassingGmail" className={cx(sty.boxStyle)}>
                 <Card className={cx(sty.inStyle)}>
                     <CardContent className={cx(sty.headerStyle)}>
                         <Typography varient="h1" className={cx(sty.tlStyle)}>
-                            Connect An Account
+                            Well this is Embarrassing
                         </Typography>
                         <ImageListItem >
                             <img src={Close} alt="close" loading="lazy" />
@@ -33,22 +31,15 @@ export default function FirstConnect() {
                         <img src={sem} alt="email" />
                         <Typography varient="h1" className={cx(sty.inText,sty.tmStyle)}>
                             Google Gmail
-                            <span className={cx(sty.spanStyle,sty.tsStyle)}> Alpha </span>
                         </Typography>
                     </Button>
-                    <Button className={cx(sty.signIn, sty.tlStyle)}>
-                        <img src={sol} alt="email" />
-                        <Typography varient="h1" className={cx(sty.inText,sty.tmStyle)}>
-                            Microsoft Outlook
-                        </Typography>
-                    </Button>
-                    <Button className={cx(sty.signIn, sty.tlStyle)}>
-                        <img src={ex} alt="email" />
-                        <Typography varient="h1" className={cx(sty.inText,sty.tmStyle)}>
-                        Microsoft Exchange
-                            <span className={cx(sty.spanStyle,sty.tsStyle)}> Soon </span>
-                        </Typography>
-                    </Button>
+                    <Typography className={cx(sty.info,sty.tsStyle)}>
+                    Your intelligent connection to Google Gmail failed. Please press connect and try to connect your
+                     account again. Need help? Submit a ticket below.
+                    </Typography>
+                    <CardContent className={cx(sty.submitT,sty.tmStyle)}>
+                        <span> Submit a Ticket </span>
+                    </CardContent>
                     </CardActions>
                 </Card>
             </Box>

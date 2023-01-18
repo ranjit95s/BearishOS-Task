@@ -1,22 +1,22 @@
 import React from 'react'
 import "@fontsource/source-serif-pro";
-import '../components/style.css';
-import {FirstConnect} from '../components/FirstConnect'
-import {AlphaAccess} from '../components/AlphaAccess'
-import {TicklingtheBackendGmail} from '../components/TicklingtheBackendGmail'
-import {TicklingtheBackendLook} from '../components/TicklingtheBackendLook'
-import {SuccessGmail} from '../components/SuccessGmail'
-import {SuccessLook} from '../components/SuccessLook'
-import {EmbarrassingGmail} from '../components/EmbarrassingGmail'
-import {EmbarrassingLook} from '../components/EmbarrassingLook'
-import {EnterName} from '../components/EnterName'
+import '../components/sty.module.css';
+import FirstConnect from '../components/FirstConnect'
+import AlphaAccess from '../components/Gmail/AlphaAccess'
+import TicklingtheBackendGmail from '../components/Gmail/TicklingtheBackendGmail'
+import TicklingtheBackendLook from '../components/MicroLook/TicklingtheBackendLook'
+import SuccessGmail from '../components/Gmail/SuccessGmail'
+import SuccessLook from '../components/MicroLook/SuccessLook'
+import EmbarrassingGmail from '../components/Gmail/EmbarrassingGmail'
+import EmbarrassingLook from '../components/MicroLook/EmbarrassingLook'
+import EnterName from '../components/Gmail/EnterName'
 
 function EmailComp() {
 
     return (
         <div style={{"display":"flex","flex-wrap": "wrap"}}>
             <FirstConnect/>
-            <AlphaAccess/>
+             <AlphaAccess/>
             <TicklingtheBackendGmail/>
             <SuccessGmail/>
             <EmbarrassingGmail/>

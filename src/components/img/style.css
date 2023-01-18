@@ -47,16 +47,16 @@
     font-weight: bold;
 }
 
-.textLStyle {
-    font-size : 18px;
-    font-family:Source Serif Pro;
-    color:#000000;
+.tlStyle {
+    font: normal normal 600 18px/21px Source Serif Pro;
 }
 
-.textSStyle  {
-    font-size : 15px;
-    font-family:Source Serif Pro;
-    font-weight: 600;
+.tmStyle  {
+    font: normal normal 600 15px/21px Source Serif Pro;
+}
+
+.tsStyle  {
+    font: normal normal 300 11px/21px Source Serif Pro;
 }
 
 .inText  {
@@ -147,12 +147,12 @@
 .btns .ref button, .btnStyles button {
     margin-right: 12px;
     background:  rgba(127, 218, 172, 0.4) no-repeat padding-box;
-    color: rgb(42, 150, 96);
+    color: #2a9660;
 }
 
 .btns .out button {
     background:  rgba(240, 41, 41, 0.4) no-repeat padding-box;
-    color: rgb(185, 1, 1);
+    color: #b90101;
 }
 .btns button > span, .btnStyles button, .hidebody label, .datetimes  {
     font-size: 15px;
@@ -198,7 +198,7 @@
     display:flex;
 }
 
-.spanInv > div {
+.spanInv  {
     margin-left: 4px;
     font: normal normal 600 15px/21px Source Serif Pro;
     letter-spacing: 0px;

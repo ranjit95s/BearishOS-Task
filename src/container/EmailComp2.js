@@ -55,9 +55,9 @@ function EmailComp2() {
         marginBottom: "7px",
         paddingBottom: "4px",
     };
-    let spanHide = {
-        display: "none",
-    };
+    // let spanHide = {
+    //     display: "none",
+    // };
     let borderBStyle = {
         borderBottom: "1px solid #ebebeb",
     };
@@ -247,6 +247,7 @@ function EmailComp2() {
                         </div>
                     </div>
                 </div>
+
                 <div style={headerBody} className={style5 ? "headerBody spanShow" : "spanHide"} >
                     <div style={composeBody} className="composeBody">
                         <label> From </label>
@@ -282,6 +283,7 @@ function EmailComp2() {
                         <textarea name="composeMain" id="composeMain"></textarea>
                     </div>
                 </div>
+
                 <div style={ComposeLower} className={style5 ? "ComposeLower spanShow" : "spanHide"}>
                         <div style={ComposeBtns} className="composerBBody">
                             <div style={ComposeBtns} className="composerLBody">
@@ -329,6 +331,7 @@ function EmailComp2() {
                             </div>
                         </div>
                     </div>
+                    
             </div>
             <div className="dropdown">
                 <div className="ddd">
