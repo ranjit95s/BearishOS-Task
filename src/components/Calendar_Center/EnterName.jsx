@@ -27,13 +27,13 @@ export default function EnterName() {
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                            <ImageListItem >
+                            <ImageListItem style={{ "margin-right": "8px" }}>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                                 <input type="text" placeholder='Enter Calendar Name' name="name" id="name" />
                             </CardContent>
-                            <CardContent className={cx(sty.btns)}>
-                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
+                            <CardContent className={cx(sty.btns,sty.cbtn)}>
+                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref,sty.cbtn)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
                                         Create Now
                                     </Button>

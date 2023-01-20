@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
 import sem from '../img/sem.png';
+import gear from '../img/gear.png';
 import ex from '../img/smallEx.png';
 import sol from '../img/sol.png';
 import Typography from '@mui/material/Typography';
@@ -25,7 +26,7 @@ export default function ConnectAccount_C() {
                             Connect An Account
                         </Typography>
                         <ImageListItem style={{"display":"flex"}}>
-                            <img src={Close} alt="close" loading="lazy" />
+                            <img src={gear} alt="close" loading="lazy" />
                             <img src={Close} alt="close" loading="lazy" />
                         </ImageListItem>
                     </CardContent>
@@ -52,7 +53,7 @@ export default function ConnectAccount_C() {
                         <img src={ex} alt="email" />
                         <Typography variant="h1" className={cx(sty.inText,sty.tmStyle)}>
                         Microsoft Teams
-                            <span className={cx(sty.spanStyle,sty.tsStyle)}> Alpha </span>
+                            <span className={cx(sty.spanStyle,sty.tbsStyle)}> Alpha </span>
                         </Typography>
                     </Button>
                     </CardActions>

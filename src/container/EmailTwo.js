@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Typography from '@mui/material/Typography';
@@ -104,21 +105,108 @@ function EmailTwo() {
                 <Typography>From</Typography>
                 {/* <input type="text" name="fromId" id="userId" defaultValue="narutouzumaki2002@gmail.com" /> */}
             </CardContent>
-            <CardContent className={cx(sty.composeBody,sty.borderBStyle)}>
+            <CardContent className={cx(sty.composeBody,sty.borderBStyle,sty.rel)}>
                   <Typography>To</Typography>
                   <input type="text" name="toId" id="toId" onClick={changeStyle}  />
+                  <Stack className={cx(sty.userData,sty.abs,sty.spanHide)}>
+                        <CardContent  className={cx(sty.user,sty.padding0)}>
+                            <Typography  className={cx(sty.pic)}>
+                                TU
+                            </Typography>
+                            <CardContent  className={cx(sty.userEmail,sty.padding0)}>
+                                <Typography  className={cx(sty.fn)}>
+                                    Full Name
+                                </Typography>
+                                <Typography  className={cx(sty.em)}>
+                                    Email of user
+                                </Typography>
+                            </CardContent>
+                        </CardContent>
+                        <CardContent  className={cx(sty.user,sty.padding0)}>
+                            <Typography  className={cx(sty.pic)}>
+                                TU
+                            </Typography>
+                            <CardContent  className={cx(sty.userEmail,sty.padding0)}>
+                                <Typography  className={cx(sty.fn)}>
+                                    Full Name
+                                </Typography>
+                                <Typography  className={cx(sty.em)}>
+                                    Email of user
+                                </Typography>
+                            </CardContent>
+                        </CardContent>
+                        
+                    </Stack>
               <CardContent  className={style}>
                 <Typography varient="h5" className={cx(sty.spanInv)}>CC</Typography>
                 <Typography varient="h5" className={cx(sty.spanInv)}>BCC</Typography>
               </CardContent>
             </CardContent>
-            <CardContent className={style2}>
+            <CardContent className={style2} style={{"display":"flex","position":"relative"}}>
               <input type="text" name="cc" id="cc" />
-              <Typography className={cx(sty.spanInv)}>CC</Typography>
+              <Typography className={cx(sty.spanInv)} style={{"margin-right": "15px"}}>CC</Typography>
+              <Stack className={cx(sty.userData,sty.abs,sty.spanHide)}>
+                        <CardContent  className={cx(sty.user,sty.padding0)}>
+                            <Typography  className={cx(sty.pic)}>
+                                TU
+                            </Typography>
+                            <CardContent  className={cx(sty.userEmail,sty.padding0)}>
+                                <Typography  className={cx(sty.fn)}>
+                                    Full Name
+                                </Typography>
+                                <Typography  className={cx(sty.em)}>
+                                    Email of user
+                                </Typography>
+                            </CardContent>
+                        </CardContent>
+                        <CardContent  className={cx(sty.user,sty.padding0)}>
+                            <Typography  className={cx(sty.pic)}>
+                                TU
+                            </Typography>
+                            <CardContent  className={cx(sty.userEmail,sty.padding0)}>
+                                <Typography  className={cx(sty.fn)}>
+                                    Full Name
+                                </Typography>
+                                <Typography  className={cx(sty.em)}>
+                                    Email of user
+                                </Typography>
+                            </CardContent>
+                        </CardContent>
+                        
+                    </Stack>
             </CardContent>
-            <CardContent className={style2}>
+            <CardContent className={style2} style={{"display":"flex","position":"relative"}}>
               <input type="text" name="bcc" id="bcc" />
-              <Typography className={cx(sty.spanInv)}>BCC</Typography>
+              <Typography className={cx(sty.spanInv)} style={{"margin-right": "15px"}}>BCC</Typography>
+              <Stack className={cx(sty.userData,sty.abs,sty.spanHide)}>
+                        <CardContent  className={cx(sty.user,sty.padding0)}>
+                            <Typography  className={cx(sty.pic)}>
+                                TU
+                            </Typography>
+                            <CardContent  className={cx(sty.userEmail,sty.padding0)}>
+                                <Typography  className={cx(sty.fn)}>
+                                    Full Name
+                                </Typography>
+                                <Typography  className={cx(sty.em)}>
+                                    Email of user
+                                </Typography>
+                            </CardContent>
+                        </CardContent>
+                        <CardContent  className={cx(sty.user,sty.padding0)}>
+                            <Typography  className={cx(sty.pic)}>
+                                TU
+                            </Typography>
+                            <CardContent  className={cx(sty.userEmail,sty.padding0)}>
+                                <Typography  className={cx(sty.fn)}>
+                                    Full Name
+                                </Typography>
+                                <Typography  className={cx(sty.em)}>
+                                    Email of user
+                                </Typography>
+                            </CardContent>
+                        </CardContent>
+                        
+                    </Stack>
             </CardContent>
               <CardContent className={cx(sty.composeBody,sty.borderBStyle)}>
               <input type="text" name="subject" id="subject" placeholder='Subject' />
@@ -133,9 +221,9 @@ function EmailTwo() {
                 <ImageListItem><img src={link} alt="hero" className={style3 ? cx(sty.bg) : ''} onClick={changeStyle2}/></ImageListItem>
                 <CardContent className={style3 ? cx(sty.hoveroutStyle,sty.spanShow) : cx(sty.hoveroutStyle,sty.spanHide)}>
                   <CardContent className={cx(sty.hoverStyle,sty.comex)}>
-                    <CardContent className={cx(sty.hoverBody,sty.comBtn)}>
-                      <input className={cx(sty.borderStyle)} type="text" name="link" id="link" />
-                      <CardContent className={cx(sty.btnStyle)}>
+                    <CardContent className={cx(sty.hoverBody,sty.comBtn)} style={{"padding":"14px !important"}}>
+                      <input placeholder="Https://" className={cx(sty.borderStyle)} type="text" name="link" id="link" />
+                      <CardContent className={cx(sty.btnStyle)} style={{"margin-top":"25px"}}>
                         <button className={cx(sty.btnStyles)} onClick={changeStyle2}> Add Link </button>
                       </CardContent>
                     </CardContent>

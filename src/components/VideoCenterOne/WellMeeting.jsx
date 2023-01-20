@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
+// import loading from '../img/loading.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -11,40 +12,42 @@ import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
 
-export default function EnterName() {
+export default function WellMeeting() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="EnterName" style={{ "height": "200px" }} className={cx(sty.boxStyle)}>
+                <Box component="EnterName" style={{ "height": "350px" }} className={cx(sty.boxStyle)}>
                     <Card className={cx(sty.inStyle)}>
                         <CardContent className={cx(sty.headerStyle)}>
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
-                                Enter Email
+                                Welcome to the Meeting
                             </Typography>
                             <ImageListItem >
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
-                            <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                                <input type="text" placeholder='Nickname' name="code" id="code" />
-                                <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"0px"}}>
-                                    <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref,sty.save)}>
-                                        <Button size="small" variant="contained" className={cx(sty.tmStyle)}>
-                                            Save
-                                        </Button>
-                                    </CardContent>
+                            <CardContent className={cx(sty.wellM)}>
+                                <CardContent className={cx(sty.signIn, sty.wellC ,sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
+                                    <input type="text" placeholder='First Name' name="code" id="code" />
+                                </CardContent>
+                                <CardContent className={cx(sty.signIn,sty.wellC ,sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
+                                    <input type="text" placeholder='Last Name' name="code" id="code" />
                                 </CardContent>
                             </CardContent>
-                            <CardContent className={cx(sty.btns)}>
+                            <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
+                                <input type="text" placeholder='Email Address' name="code" id="code" />
+                            </CardContent>
+                            <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
+                                <input type="text" placeholder='Meeting Name' name="code" id="code" />
+                            </CardContent>
+                            <Typography className={cx(sty.info, sty.tmsmStyle)}>
+                                Help Bearish better identify you in the meeting.
+                            </Typography>
+                            <CardContent className={cx(sty.btns,sty.wbtn)}>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Refresh
-                                    </Button>
-                                </CardContent>
-                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.out)}>
-                                    <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Logout
+                                        Enter Call
                                     </Button>
                                 </CardContent>
                             </CardContent>

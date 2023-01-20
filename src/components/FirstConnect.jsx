@@ -33,7 +33,7 @@ export default function FirstConnect() {
                         <img src={sem} alt="email" />
                         <Typography varient="h1" className={cx(sty.inText,sty.tmStyle)}>
                             Google Gmail
-                            <span className={cx(sty.spanStyle,sty.tsStyle)}> Alpha </span>
+                            <span className={cx(sty.spanStyle,sty.tbsStyle)}> Alpha </span>
                         </Typography>
                     </Button>
                     <Button className={cx(sty.signIn, sty.tlStyle)}>
@@ -46,7 +46,7 @@ export default function FirstConnect() {
                         <img src={ex} alt="email" />
                         <Typography varient="h1" className={cx(sty.inText,sty.tmStyle)}>
                         Microsoft Exchange
-                            <span className={cx(sty.spanStyle,sty.tsStyle)}> Soon </span>
+                            <span className={cx(sty.spanStyle,sty.tbsStyle)}> Soon </span>
                         </Typography>
                     </Button>
                     </CardActions>

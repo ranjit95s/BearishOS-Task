@@ -28,21 +28,28 @@ export default function CalendarName() {
                         <CardActions className={cx(sty.signSec)}>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                                 <input type="text" placeholder='Nickname' name="Cal" id="Cal" />
+                                <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"0px"}}>
+                                    <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref,sty.save)}>
+                                        <Button size="small" variant="contained" className={cx(sty.tmStyle)}>
+                                            Save
+                                        </Button>
+                                    </CardContent>
+                                </CardContent>
                                 <input className={cx(sty.colorSelect)} type="color" name="color" id="colors"/>
                                 <label For="colors"><img src={Close} alt="close" loading="lazy" /></label>
                             </CardContent>
-                            <CardContent className={cx(sty.btns)}>
-                            <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.out)}>
-                                    <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Logout
-                                    </Button>
-                                </CardContent>
-                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
+                            <CardContent className={cx(sty.btns,sty.ebtns)}>
+                            <CardContent style={{ "width": "auto !important" }} className={cx(sty.btnIn, sty.ebtnIn,sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
                                         Refresh
                                     </Button>
                                 </CardContent>
-                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.out)}>
+                                <CardContent style={{ "width": "auto !important" }} className={cx(sty.btnIn,sty.padding0,sty.ebtnIn, sty.tsStyle, sty.yel)}>
+                                    <Button variant="contained" className={cx(sty.tmStyle)}>
+                                        Hide
+                                    </Button>
+                                </CardContent>
+                                <CardContent style={{ "width": "auto !important" }} className={cx(sty.btnIn,sty.ebtnIn, sty.tsStyle, sty.out)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
                                         Logout
                                     </Button>

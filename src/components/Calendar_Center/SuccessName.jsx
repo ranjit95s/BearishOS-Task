@@ -27,7 +27,7 @@ export default function SuccessName() {
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                            <ImageListItem >
+                            <ImageListItem style={{ "margin-right": "8px" }}>
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                                 <input type="text" defaultValue="Calendar Name" readOnly name="name" id="name" />

@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
+import loading from '../img/loading.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -11,15 +12,15 @@ import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
 
-export default function EnterName() {
+export default function CreateNewMeetingLoad() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="EnterName" style={{ "height": "200px" }} className={cx(sty.boxStyle)}>
+                <Box component="EnterName" style={{ "height": "267px" }} className={cx(sty.boxStyle)}>
                     <Card className={cx(sty.inStyle)}>
                         <CardContent className={cx(sty.headerStyle)}>
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
-                                Enter Email
+                                Name Your Meeting
                             </Typography>
                             <ImageListItem >
                                 <img src={Close} alt="close" loading="lazy" />
@@ -27,26 +28,15 @@ export default function EnterName() {
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                                <input type="text" placeholder='Nickname' name="code" id="code" />
-                                <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"0px"}}>
-                                    <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref,sty.save)}>
-                                        <Button size="small" variant="contained" className={cx(sty.tmStyle)}>
-                                            Save
-                                        </Button>
-                                    </CardContent>
-                                </CardContent>
+                                <input type="text" placeholder='Name your Meeting' name="code" id="code" />
                             </CardContent>
+                            <Typography className={cx(sty.info,sty.tmsmStyle)}>
+                            Just a second while we create your shiny new meeting.
+                    </Typography>
                             <CardContent className={cx(sty.btns)}>
-                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
-                                    <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Refresh
-                                    </Button>
-                                </CardContent>
-                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.out)}>
-                                    <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Logout
-                                    </Button>
-                                </CardContent>
+                            <ImageListItem >
+                                <img src={loading} alt="close" loading="lazy" />
+                            </ImageListItem>
                             </CardContent>
                         </CardActions>
                     </Card>

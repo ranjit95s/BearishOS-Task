@@ -16,7 +16,7 @@
 
 .inStyle {
     font-family:Source Serif Pro Bold  !important;
-    width: 250px;
+    width: 275px;
     height: 40px;
     box-shadow: none !important;
     margin:auto;
@@ -38,17 +38,23 @@
 .tsStyle  {
     font: normal normal 300 11px/21px Source Serif Pro  !important;
 }
+
+.tbsStyle  {
+    font: normal normal 600 11px/17px Source Serif Pro  !important;
+}
+
 .dtl > span  {
     font: normal normal 600 15px/21px Source Serif Pro  !important;
 }
 .headerStyle {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top:20px !important;
-    padding-bottom:10px !important;
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
     font-weight: bold;
-    padding:0px;
+    padding: 0px;
+    align-items: center;
 }
 
 .signIn  {
@@ -86,12 +92,13 @@
 .spanStyle {
     position: absolute;
     right: 12px;
-    padding: 1px 3px;
+    padding: 0px 5px;
     background: #5EE2A0 0% 0% no-repeat padding-box;
     border: 1px solid #5EE2A0;
     border-radius: 5px;
-    top: 8.5px;
+    top: 10.5px;
     font-weight: 600;
+    opacity: 1 !important;
     color: rgba(0, 0, 0, 1);
     font-size: 11px;
 }
@@ -177,12 +184,20 @@
     background:  rgba(127, 218, 172, 0.4) no-repeat padding-box;
     color: #2a9660;
 }
+.btns .yel button, .btnStyles {
+    margin-right: 12px;
+    background: #FFA700 0% 0% no-repeat padding-box;
+border: 1px solid #E9EDF2;
+color: #925f00d2;
+}
 .btns .ref , .btns .out {
     padding-bottom: 0px !important;
+
     padding: 0px !important;
 
 }
 .btns .out button {
+    /* margin-right: 12px; */
     background:  rgba(240, 41, 41, 0.4) no-repeat padding-box;
     color: #b90101;
 }
@@ -367,16 +382,18 @@
     outline: none;
     border: none;
     margin-right: 0;
+    text-transform: capitalize;
 }
  .comex  {
     width: 300px;
-    left: -8rem;
-    top: -5rem;
+    left: -11rem;
+    top: -8rem;
 }
 .comexx {
-        width: 300px;
-    left: -18rem;
-    top: -11rem;
+    width: 225px;
+    left: -13rem;
+    top: -9rem;
+    opacity: 0.5;
 }
  .datetime  {
     display: flex;
@@ -419,11 +436,16 @@
     display:flex;
 }
 
+.cbtn button{
+ width:119px !important;
+}
+
 .spanInv {
     margin-left: 4px;
     font: normal normal 600 15px/21px Source Serif Pro;
     letter-spacing: 0px;
     color: #000000;
+    /* margin-right: 15px; */
     opacity: 0.5;
     padding: 0px !important;
 }
@@ -461,7 +483,7 @@
 .padding0 {
     padding: 0px !important;
 }
-.userEmail div {
+/* .userEmail div {
     padding: 1px 1px !important;
     font: normal normal 600 13px/21px Source Serif Pro;
     letter-spacing: 0px;
@@ -483,9 +505,9 @@
 }
 
 .userEmail svg{
-        /* display: none !important; */
+        display: none !important;
         visibility: hidden !important;
-}
+} */
 .dropdown {
     width: 253px;
     height: max-content;
@@ -520,6 +542,7 @@
 .bg{
     background-color: #5EE2A0;
     border-radius: 5px;
+    width: 25px !important;
 }
 
 .ename {
@@ -541,9 +564,6 @@
     flex-wrap: wrap;
 }
 
-.ebtnIn {
-    width:50%;
-}
 
 .ebtns .ebtnIn button {
     width:max-content !important;
@@ -605,6 +625,7 @@ opacity: 1;
     box-shadow: 0px 3px 6px #00000029;
     padding: 10px !important;
     border-radius: 5px;
+    z-index: 1;
 }
 .imgr {
     margin-left:12px;
@@ -615,6 +636,29 @@ opacity: 1;
     justify-content: space-between;
     align-items: center;
 }
+.flexUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btna {
+    margin-top:-5px !important;
+}
+
+.btna button {
+    height:25px !important;
+}
+
+.flexAccess {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
 .userInfo {
     display:flex;
     padding:0px !important;
@@ -625,4 +669,107 @@ opacity: 1;
     padding:5px !important;
     border-radius: 50%;
     border: 1px solid gray;
+}
+.users {
+    width:6.2rem;
+    margin-top:3px;
+    margin-bottom:3px;
+    font: normal normal 300 13px/17px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.mar{
+    margin:4px;
+}
+.mars {
+    margin:4px;
+    font: normal normal 600 13px/21px Source Serif Pro  !important;
+    color: black;
+}
+
+.abss{
+    position: absolute;
+    top: 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 2px !important;
+    border-radius: 5px;
+    z-index: 1;
+    right: -1rem;
+}
+
+.mars span {
+    font: normal normal 300 11px/15px Source Serif Pro;
+    letter-spacing: -0.1px;
+    color: #000000;
+    opacity: 1;
+}
+
+.colorr{
+    background: #FF0000 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 0.25;
+    display:block;
+}
+
+.absf {
+    position: fixed;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 0px !important;
+    border-radius: 5px;
+    z-index: 1000;
+    transform: translate(-5.2rem, -0.6rem);
+}
+
+.wellM {
+        padding: 0px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.wellC {
+    width:45%;
+}
+
+.wbtn button {
+    width:110px !important;
+}
+
+.CameraON {
+    height:115px;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.ask {
+    justify-content:space-between;
+}
+
+.askp {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.pink {
+    background:pink 0% 0% no-repeat padding-box;
+}
+
+.save button {
+    font-size: 12px !important;
+    width: 20px !important;
+    height: 20px !important;
+    overflow: hidden;
+    font-weight: 700 !important;
+    margin-right: 0px !important;
+    /* background: rgba(127, 218, 172, 0.4) no-repeat padding-box;
+    color: #2a9660; */
 }

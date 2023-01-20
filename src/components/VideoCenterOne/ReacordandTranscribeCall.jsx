@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
+import loading from '../img/loading.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -11,40 +12,33 @@ import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
 
-export default function EnterName() {
+export default function ReacordandTranscribeCall() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="EnterName" style={{ "height": "200px" }} className={cx(sty.boxStyle)}>
+                <Box component="EnterName" style={{ "height": "175px" }} className={cx(sty.boxStyle)}>
                     <Card className={cx(sty.inStyle)}>
                         <CardContent className={cx(sty.headerStyle)}>
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
-                                Enter Email
+                            Record and Transcribe Call
                             </Typography>
                             <ImageListItem >
                                 <img src={Close} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
-                            <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                                <input type="text" placeholder='Nickname' name="code" id="code" />
-                                <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"0px"}}>
-                                    <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref,sty.save)}>
-                                        <Button size="small" variant="contained" className={cx(sty.tmStyle)}>
-                                            Save
-                                        </Button>
-                                    </CardContent>
-                                </CardContent>
-                            </CardContent>
+                        <Typography className={cx(sty.info,sty.tmsmStyle)}>
+                        Would you like Bearish to record and transcribe this call?
+                    </Typography>
                             <CardContent className={cx(sty.btns)}>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Refresh
+                                        Yes
                                     </Button>
                                 </CardContent>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.out)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Logout
+                                        No
                                     </Button>
                                 </CardContent>
                             </CardContent>

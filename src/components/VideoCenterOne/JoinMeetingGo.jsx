@@ -11,15 +11,15 @@ import cx from 'classnames';
 import { StyledEngineProvider } from '@mui/material/styles';
 import sty from '../sty.module.css';
 
-export default function EnterName() {
+export default function JoinMeetingGo() {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <Box component="EnterName" style={{ "height": "200px" }} className={cx(sty.boxStyle)}>
+                <Box component="EnterName" style={{ "height": "250px" }} className={cx(sty.boxStyle)}>
                     <Card className={cx(sty.inStyle)}>
                         <CardContent className={cx(sty.headerStyle)}>
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
-                                Enter Email
+                            Join a Meeting
                             </Typography>
                             <ImageListItem >
                                 <img src={Close} alt="close" loading="lazy" />
@@ -27,24 +27,15 @@ export default function EnterName() {
                         </CardContent>
                         <CardActions className={cx(sty.signSec)}>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                                <input type="text" placeholder='Nickname' name="code" id="code" />
-                                <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"0px"}}>
-                                    <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref,sty.save)}>
-                                        <Button size="small" variant="contained" className={cx(sty.tmStyle)}>
-                                            Save
-                                        </Button>
-                                    </CardContent>
-                                </CardContent>
+                                <input type="text" placeholder='Meeting Id or Meeting Link' name="code" id="code" />
                             </CardContent>
+                            <Typography className={cx(sty.info,sty.tmsmStyle)}>
+                            Ask the host of your meeting for a Meeting Id or Meeting Link to join.
+                            </Typography>
                             <CardContent className={cx(sty.btns)}>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Refresh
-                                    </Button>
-                                </CardContent>
-                                <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.out)}>
-                                    <Button variant="contained" className={cx(sty.tmStyle)}>
-                                        Logout
+                                        Go
                                     </Button>
                                 </CardContent>
                             </CardContent>
