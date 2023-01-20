@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BearishOS-Task/static/css/main.3fb8a2e5.css",
-    "main.js": "/BearishOS-Task/static/js/main.d0f87b6a.js",
+    "main.css": "/BearishOS-Task/static/css/main.ab9babfb.css",
+    "main.js": "/BearishOS-Task/static/js/main.9abb3940.js",
     "static/media/source-serif-pro-all-400-normal.woff": "/BearishOS-Task/static/media/source-serif-pro-all-400-normal.a8a93831984ffd4e8f7b.woff",
     "static/media/source-serif-pro-latin-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-latin-400-normal.f5b1bc3ff0438b15298d.woff2",
     "static/media/source-serif-pro-latin-ext-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-latin-ext-400-normal.eb9ad12b9dda04fce5af.woff2",
@@ -10,11 +10,11 @@
     "static/media/source-serif-pro-cyrillic-ext-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-cyrillic-ext-400-normal.a16446d373777df62a7e.woff2",
     "static/media/source-serif-pro-vietnamese-400-normal.woff2": "/BearishOS-Task/static/media/source-serif-pro-vietnamese-400-normal.8fb8eabe508ffcd906af.woff2",
     "index.html": "/BearishOS-Task/index.html",
-    "main.3fb8a2e5.css.map": "/BearishOS-Task/static/css/main.3fb8a2e5.css.map",
-    "main.d0f87b6a.js.map": "/BearishOS-Task/static/js/main.d0f87b6a.js.map"
+    "main.ab9babfb.css.map": "/BearishOS-Task/static/css/main.ab9babfb.css.map",
+    "main.9abb3940.js.map": "/BearishOS-Task/static/js/main.9abb3940.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fb8a2e5.css",
-    "static/js/main.d0f87b6a.js"
+    "static/css/main.ab9babfb.css",
+    "static/js/main.9abb3940.js"
   ]
 }
