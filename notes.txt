@@ -20,3 +20,17 @@
     border-radius: 5px;
     opacity: 1;
 ]
+
+<Stack>
+                                            <TextField
+                                            select
+                                           defaultValue="can edit"
+                                            className={cx(sty.userEmail,sty.tmsmStyle,sty.padding0)}
+                                            value={accessOne}
+                                           
+                                            onChange={handleChange}
+                                            >
+                                                <MenuItem className={cx(sty.userEmail,sty.tmsmStyle)} value="can edit">can edit</MenuItem>
+                                                <MenuItem className={cx(sty.userEmail,sty.tmsmStyle)} value="can view">can view</MenuItem>
+                                            </TextField>
+                                        </Stack>

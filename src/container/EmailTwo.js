@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Typography from '@mui/material/Typography';
@@ -19,7 +19,47 @@ import trash from '../components/img/trash.png'
 
 
 import sty from '../components/sty.module.css'
-function NewEmail2() {
+// import { ClassNames } from '@emotion/react';
+function EmailTwo() {
+    const [style, setStyle] = useState(cx(sty.spanInv));
+    const [style2, setStyle2] = useState(cx(sty.spanHide,sty.spanInv));
+
+    const [style3, setStyle3] = useState(false);
+    const [style4, setStyle4] = useState(false);
+    const [style5, setStyle5] = useState(false);
+    // const [style6, setStyle6] = React.useState(false);
+
+    const changeStyle = () => {
+        setStyle(cx(sty.spanInv,sty.spanHide));
+        setStyle2(cx(sty.composeBody,sty.borderBStyle,sty.spanShow,sty.spanInv));
+    };
+
+    const changeStyle2 = () => {
+        if(style3){
+            setStyle3(false);
+        }
+        else {
+            setStyle3(true);
+        }
+    };
+    const changeStyle3 = () => {
+        if(style4)
+            setStyle4(false)
+        else 
+            setStyle4(true)
+    };
+    const changeStyle4 = () => {
+        if(style5)
+            setStyle5(false)
+        else 
+            setStyle5(true)
+    };
+    // const changeStyle5 = () => {
+    //     if(style6)
+    //         setStyle6(false)
+    //     else 
+    //         setStyle6(true)
+    // };
   return (
     <>
     <StyledEngineProvider injectFirst>
@@ -27,8 +67,8 @@ function NewEmail2() {
       <Card className={cx(sty.mainStyle)}>
             <CardContent className={cx(sty.headers)}>
               <CardContent className={cx(sty.headerContent,sty.padding0)}>
-                <ImageListItem><img className={cx(sty.hello)} src={Share} alt="hero" /></ImageListItem>
-                <CardContent className={cx(sty.hoveroutStyle,sty.padding0,sty.spanHide)}>
+                <ImageListItem><img className={style5 ? cx(sty.halpha,sty.hello) : cx(sty.spanVis)} src={Share} alt="hero" /></ImageListItem>
+                <CardContent className={cx(sty.hoveroutStyle,sty.padding0,sty.alpha)}>
                   <CardContent className={cx(sty.hoverStyle)}>
                     <CardContent className={cx(sty.hoverBody)}>
                       <Typography className={cx(sty.tsStyle)}>Share Email Alpha</Typography>
@@ -36,11 +76,11 @@ function NewEmail2() {
                     </CardContent>
                   </CardContent>
                 </CardContent>
-                <Typography className={cx(sty.spanHide)}>Subject</Typography>
+                <Typography className={style5 ? cx(sty.spanHide) : cx(sty.spanShow)}>Subject</Typography>
               </CardContent>
               <CardContent className={cx(sty.headerContent,sty.padding0)}>
-              <ImageListItem><img src={remove} alt="hero" className={cx(sty.imgStyle,sty.padding0)} /></ImageListItem>
-                <CardContent className={cx(sty.hoveroutStyle,sty.padding0,sty.spanHide)}>
+              <ImageListItem><img src={remove} alt="hero" onClick={changeStyle4} className={cx(sty.imgStyle,sty.hmini,sty.padding0)} /></ImageListItem>
+                <CardContent className={cx(sty.hoveroutStyle,sty.padding0,sty.mini)}>
                   <CardContent className={cx(sty.hoverStyle)}>
                     <CardContent className={cx(sty.hoverBody)}>
                       <Typography className={cx(sty.tsStyle)}>Minimize Draft</Typography>
@@ -48,8 +88,8 @@ function NewEmail2() {
                     </CardContent>
                   </CardContent>
                 </CardContent>
-                <ImageListItem><img src={Close} alt="hero" className={cx(sty.imgStyle,sty.padding0)}/></ImageListItem>
-                <CardContent className={cx(sty.hoveroutStyle,sty.padding0,sty.spanHide)}>
+                <ImageListItem><img src={Close} alt="hero" className={cx(sty.imgStyle,sty.padding0,sty.hcross)}/></ImageListItem>
+                <CardContent className={cx(sty.hoveroutStyle,sty.padding0,sty.cross)}>
                   <CardContent className={cx(sty.hoverStyle)}>
                     <CardContent className={cx(sty.hoverBody)}>
                       <Typography className={cx(sty.tsStyle)}>Close</Typography>
@@ -59,24 +99,24 @@ function NewEmail2() {
                 </CardContent>
               </CardContent>
             </CardContent>
-            <CardContent className={cx(sty.headerBody)}>
+            <CardContent className={style5 ? cx(sty.headerBody,sty.spanShow) : cx(sty.spanHide)}>
               <CardContent  className={cx(sty.composeBody)}>
                 <Typography>From</Typography>
-                <input type="text" name="fromId" id="userId" defaultValue="narutouzumaki2002@gmail.com" />
+                {/* <input type="text" name="fromId" id="userId" defaultValue="narutouzumaki2002@gmail.com" /> */}
             </CardContent>
             <CardContent className={cx(sty.composeBody,sty.borderBStyle)}>
                   <Typography>To</Typography>
-                  <input type="text" name="toId" id="toId" />
-              <CardContent  className={cx(sty.spanInv)}>
+                  <input type="text" name="toId" id="toId" onClick={changeStyle}  />
+              <CardContent  className={style}>
                 <Typography varient="h5" className={cx(sty.spanInv)}>CC</Typography>
                 <Typography varient="h5" className={cx(sty.spanInv)}>BCC</Typography>
               </CardContent>
             </CardContent>
-            <CardContent className={cx(sty.composeBody,sty.borderBStyle)}>
+            <CardContent className={style2}>
               <input type="text" name="cc" id="cc" />
               <Typography className={cx(sty.spanInv)}>CC</Typography>
             </CardContent>
-            <CardContent className={cx(sty.composeBody,sty.borderBStyle)}>
+            <CardContent className={style2}>
               <input type="text" name="bcc" id="bcc" />
               <Typography className={cx(sty.spanInv)}>BCC</Typography>
             </CardContent>
@@ -87,16 +127,16 @@ function NewEmail2() {
               <textarea name="composeMain" id="composeMain"></textarea>
             </CardContent>
             </CardContent>
-            <CardContent className={cx(sty.ComposeLower)}>
+            <CardContent className={style5 ? cx(sty.ComposeLower,sty.spanShow) : cx(sty.ComposeLower,sty.spanHide)}>
               <CardContent className={cx(sty.ComposeBtns)}>
               <CardContent className={cx(sty.ComposeBtns)}>
-                <ImageListItem><img src={link} alt="hero" /></ImageListItem>
-                <CardContent className={cx(sty.hoveroutStyle,sty.spanHide)}>
+                <ImageListItem><img src={link} alt="hero" className={style3 ? cx(sty.bg) : ''} onClick={changeStyle2}/></ImageListItem>
+                <CardContent className={style3 ? cx(sty.hoveroutStyle,sty.spanShow) : cx(sty.hoveroutStyle,sty.spanHide)}>
                   <CardContent className={cx(sty.hoverStyle,sty.comex)}>
                     <CardContent className={cx(sty.hoverBody,sty.comBtn)}>
                       <input className={cx(sty.borderStyle)} type="text" name="link" id="link" />
                       <CardContent className={cx(sty.btnStyle)}>
-                        <button className={cx(sty.btnStyles)}> Add Link </button>
+                        <button className={cx(sty.btnStyles)} onClick={changeStyle2}> Add Link </button>
                       </CardContent>
                     </CardContent>
                   </CardContent>
@@ -117,9 +157,9 @@ function NewEmail2() {
                 <ImageListItem><img src={trash} alt="hero" /></ImageListItem>
               </CardContent>
               <CardContent className={cx(sty.ComposeBtns,sty.borderStyle)}>
-                <Typography >Send</Typography>
+                <Typography onClick={changeStyle3}>Send</Typography>
                 <ImageListItem><img src={LD} alt="hero" /></ImageListItem>
-                <CardContent className={cx(sty.hoveroutStyle,sty.spanHide)}>
+                <CardContent className={style4 ? cx(sty.hoveroutStyle,sty.spanShow) : cx(sty.hoveroutStyle,sty.spanHide)}>
                   <CardContent className={cx(sty.hoverStyle,sty.comexx)}>
                     <CardContent className={cx(sty.hoverBody,sty.comBtn)}>
                     <Typography className={cx(sty.tmStyle)}>Schedule Email</Typography>
@@ -128,7 +168,7 @@ function NewEmail2() {
                       <CardContent className={cx(sty.padding0)}>00:00 AM</CardContent>
                     </CardContent>
                       <CardContent className={cx(sty.btnStyle)}>
-                        <Button className={cx(sty.btnStyles)}> Schedule Now </Button>
+                        <Button className={cx(sty.btnStyles)} onClick={changeStyle3}> Schedule Now </Button>
                       </CardContent>
                     </CardContent>
                   </CardContent>
@@ -143,4 +183,4 @@ function NewEmail2() {
   )
 }
 
-export default NewEmail2
+export default EmailTwo

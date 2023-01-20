@@ -31,10 +31,16 @@
     font: normal normal 600 15px/21px Source Serif Pro  !important;
 }
 
+.tmsmStyle  {
+    font: normal normal 300 15px/21px Source Serif Pro  !important;
+}
+
 .tsStyle  {
     font: normal normal 300 11px/21px Source Serif Pro  !important;
 }
-
+.dtl > span  {
+    font: normal normal 600 15px/21px Source Serif Pro  !important;
+}
 .headerStyle {
     display: flex; 
     flex-direction: row;
@@ -455,6 +461,31 @@
 .padding0 {
     padding: 0px !important;
 }
+.userEmail div {
+    padding: 1px 1px !important;
+    font: normal normal 600 13px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    border: none !important;
+    opacity: 0.5;
+}
+
+.userEmail fieldset{
+    border: none !important;
+}
+
+.userEmail ul {
+    padding:8px !important;
+}
+
+.userEmail ul > li {
+    padding:5px 10px !important;
+}
+
+.userEmail svg{
+        /* display: none !important; */
+        visibility: hidden !important;
+}
 .dropdown {
     width: 253px;
     height: max-content;
@@ -489,4 +520,109 @@
 .bg{
     background-color: #5EE2A0;
     border-radius: 5px;
+}
+
+.ename {
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+.enames {
+    margin-top:25px;
+    margin-bottom:20px;
+}
+
+.minh {
+    min-height:5.5rem;
+}
+
+.ebtns {
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.ebtnIn {
+    width:50%;
+}
+
+.ebtns .ebtnIn button {
+    width:max-content !important;
+    opacity:70%;
+}
+
+.et {
+    margin-bottom: 7.5px;
+    margin-top:7.5px;
+}
+
+.padt {
+    padding-top: 10px !important;
+}
+
+.italic {
+    font: italic normal normal 15px/21px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+margin-top:5.8rem;
+opacity: 1;
+}
+
+.colorSelect {
+    /* background: #000AFF 0% 0% no-repeat padding-box; */
+    /* border: 1px solid #000AFF; */
+    border-radius: 5px;
+    border: none;
+    opacity: 1;
+    padding: 1px;
+    width: 25px !important;
+    appearance: none;
+    opacity: 1 !important;
+    height: 25px !important;
+}
+.colorSelect::-webkit-color-swatch {
+    border-radius: 5px;
+}
+.minHeight {
+    max-height: 2.8rem;
+    overflow: scroll;
+    margin-top: 15px;
+}
+.minHeights {
+    max-height: 6.99rem;
+    overflow: scroll;
+    margin-top: 15px;
+}
+.minHeight::-webkit-scrollbar , .minHeights::-webkit-scrollbar {
+    display:none !important;
+}
+.rel {
+    position:relative;
+}
+.abs {
+    position: absolute;
+    top: 3rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 10px !important;
+    border-radius: 5px;
+}
+.imgr {
+    margin-left:12px;
+    padding:1px;
+}
+.flexWS {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userInfo {
+    display:flex;
+    padding:0px !important;
+    justify-content: start;
+    align-items: center;
+}
+.picc {
+    padding:5px !important;
+    border-radius: 50%;
+    border: 1px solid gray;
 }

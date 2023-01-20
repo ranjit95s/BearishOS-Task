@@ -16,7 +16,7 @@ function EmailComp() {
     return (
         <div style={{"display":"flex","flex-wrap": "wrap"}}>
             <FirstConnect/>
-             <AlphaAccess/>
+            <AlphaAccess/>
             <TicklingtheBackendGmail/>
             <SuccessGmail/>
             <EmbarrassingGmail/>
