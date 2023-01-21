@@ -138,7 +138,7 @@
     padding:7px !important;
 }
 
-.inputStyle input[type="text"]::placeholder {
+.inputStyle input[type="text"]::placeholder,.inputStyle textarea {
     font-size : 15px;
     font-family:Source Serif Pro;
     color:#000000;
@@ -146,7 +146,7 @@
     font-weight: 600;
     text-align: center;
 }
-.NickStyle input[type="text"]::placeholder , .hoverB input[type="text"]::placeholder{
+.NickStyle input[type="text"]::placeholder , .hoverB input[type="text"]::placeholder,.inputStyle textarea{
     text-align: left;
 }
 .submitT {

@@ -1,0 +1,112 @@
+.signCal {
+    padding: 4px !important;
+    margin-top: 0px !important;
+    /* width: 283px; */
+}
+
+.boxWH {
+    width: 350px;
+    min-height:525px;
+    max-height:650px;
+}
+
+.boxIn {
+    width: 325px;
+}
+
+.mar {
+    margin-bottom: 25px;
+}
+
+.mtm {
+    margin-top: -10px;
+}
+
+.t61521 {
+    text-align: left;
+font: normal normal 600 15px/21px Source Serif Pro !important;
+letter-spacing: 0px  !important;
+color: #000000  !important;
+opacity: 0.5  !important;
+}
+
+.mainStack {
+    display:flex;
+    flex-direction: row;
+}
+
+.iconCard {
+    padding:0px !important;
+    margin-right:30px;
+}
+
+.iconW {
+    width:25px;
+}
+
+.tmr {
+    margin-right:15px;
+}
+
+.dateTimeFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0px !important;
+    width: 198px;
+    
+}
+
+.mr{
+    margin-right: 20px;
+}
+
+.jcs {
+    justify-content:start;
+}
+
+.jce {
+    justify-content:end;
+    align-items: center;
+}
+
+.mt10 {
+margin-top:11px;
+}
+
+.saved button{
+    font-size: 15px !important;
+    /* width: 20px !important; */
+    height: 28px !important;
+    overflow: hidden;
+    font-weight: 700 !important;
+    position: relative;
+    margin-right: 0px !important;
+    top: -3px;
+}
+
+.jcs svg {
+    color:lightgray;
+}
+
+.w100 {
+    width:100% !important;
+}
+
+.op1 {
+    opacity: 1 !important;
+}
+
+/* .op12 input {
+    opacity: 1 !important;
+}
+
+.op12 input[type="text"]::placeholder {
+    opacity: 1 !important;
+} */
+
+.ta {
+    width: 100%;
+    resize: none;
+    border: none !important;
+}
