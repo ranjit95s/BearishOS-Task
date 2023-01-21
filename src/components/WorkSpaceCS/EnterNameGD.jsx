@@ -28,13 +28,20 @@ export default function EnterNameGD() {
                         <CardActions className={cx(sty.signSec)}>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                                 <input type="text" placeholder='Nickname' name="code" id="code" />
+                                <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"0px"}}>
+                                    <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref,sty.save)}>
+                                        <Button size="small" variant="contained" className={cx(sty.tmStyle)}>
+                                            Save
+                                        </Button>
+                                    </CardContent>
+                                </CardContent>
                             </CardContent>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                            <Typography varient="h1" className={cx(sty.tmStyle)}>
+                            <Typography varient="h1" className={cx(sty.tmStyle,sty.op05)}>
                                 emailexample@example.com
                             </Typography>
                             </CardContent>
-                            <CardContent className={cx(sty.btns)}>
+                            <CardContent className={cx(sty.btns,sty.ale)}>
                                 <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref)}>
                                     <Button variant="contained" className={cx(sty.tmStyle)}>
                                         Refresh

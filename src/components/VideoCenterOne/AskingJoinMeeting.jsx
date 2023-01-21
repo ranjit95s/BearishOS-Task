@@ -3,6 +3,12 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
+
+import camOff from '../img/camOff.png';
+import camOn from '../img/camOn.png';
+import micOff from '../img/micOff.png';
+import micOn from '../img/micOn.png';
+
 import loading from '../img/loading.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -57,10 +63,10 @@ export default function AskingJoinMeeting() {
                             <CardContent className={cx(sty.btns,sty.ask)}>
                                 <ImageListItem style={{"display":"flex"}}>
                                     <ImageListItem className={microphone ? cx(sty.askp,sty.pink) : cx(sty.askp)} onClick={turnOnMic}>
-                                        <img src={Close} alt="close" loading="lazy" />
+                                        <img src={microphone ? micOn : micOff} alt="close" loading="lazy" />
                                     </ImageListItem>
                                     <ImageListItem className={cameraOn ? cx(sty.askp,sty.pink) : cx(sty.askp)} onClick={turnOnCam}>
-                                        <img src={Close} alt="close" loading="lazy" />
+                                        <img src={cameraOn ? camOn : camOff}  alt="close" loading="lazy" />
                                     </ImageListItem>
                                 </ImageListItem>
                                 <ImageListItem >

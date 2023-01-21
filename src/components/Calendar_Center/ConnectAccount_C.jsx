@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
 import sem from '../img/sem.png';
+import logoM from '../img/LogoM.png'
 import gear from '../img/gear.png';
 import ex from '../img/smallEx.png';
 import sol from '../img/sol.png';
@@ -25,14 +26,14 @@ export default function ConnectAccount_C() {
                         <Typography variant="h1" className={cx(sty.tlStyle)}>
                             Connect An Account
                         </Typography>
-                        <ImageListItem style={{"display":"flex"}}>
-                            <img src={gear} alt="close" loading="lazy" />
-                            <img src={Close} alt="close" loading="lazy" />
+                        <ImageListItem style={{"display":"flex","align-items": "center"}}>
+                            <img  src={gear} alt="close" loading="lazy" />
+                            <img className={cx(sty.imgStyle)} src={Close} alt="close" loading="lazy" />
                         </ImageListItem>
                     </CardContent>
                     <CardActions  className={cx(sty.signSec)}>
                     <Button className={cx(sty.signIn, sty.tlStyle)}>
-                        <img src={sol} alt="email" />
+                        <img src={logoM} alt="logoM" />
                         <Typography variant="h1" className={cx(sty.inText,sty.tmStyle)}>
                             Create New Calendar
                         </Typography>

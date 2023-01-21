@@ -4,6 +4,10 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
+import access from '../img/Access.png';
+import search from '../img/search.png';
+import dau from '../img/dau.png';
+import dad from '../img/dad.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -84,8 +88,8 @@ export default function CalendarWorkSpace() {
                             <Typography varient="h1" className={cx(sty.tlStyle)}>
                                 Share This [WorkSpace]
                             </Typography>
-                            <ImageListItem className={cx(sty.rel)} style={{ "display": "flex" }}>
-                                <img src={Close} onClick={changeStyle6} alt="close" loading="lazy" />
+                            <ImageListItem className={cx(sty.rel)} style={{ "display": "flex","align-items": "center" }}>
+                                <img src={access} onClick={changeStyle6} alt="close" loading="lazy" />
                                 <Stack style={{ "width": "300px","left":"-18rem","top":"2rem" }} className={style7 ? cx(sty.ddd, sty.abs, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                     <CardContent className={cx(sty.headerStyle)} >
                                         <Typography varient="h1" className={cx(sty.tmStyle)}>
@@ -105,7 +109,7 @@ export default function CalendarWorkSpace() {
                                                     <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
                                                         Full Name
                                                     </Typography>
-                                                    <Typography variant="h6" className={cx(sty.en, sty.tmsmStyle)}>
+                                                    <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
                                                         Email of user
                                                     </Typography>
                                                 </CardContent>
@@ -115,7 +119,7 @@ export default function CalendarWorkSpace() {
                                             <CardContent style={{ "margin-left": "0px" }} className={cx(sty.ComposeBtns, sty.tsStyle)}>
                                                 <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
                                                     <Typography onClick={changeStyle3} className={cx(sty.tsStyle)}>Can Edit</Typography>
-                                                    <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                                    <ImageListItem className={cx(sty.imgr)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style4 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle3}>
@@ -159,7 +163,7 @@ export default function CalendarWorkSpace() {
                                                     <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
                                                         Full Name
                                                     </Typography>
-                                                    <Typography variant="h6" className={cx(sty.en, sty.tmsmStyle)}>
+                                                    <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
                                                         Email of user
                                                     </Typography>
                                                 </CardContent>
@@ -169,7 +173,7 @@ export default function CalendarWorkSpace() {
                                             <CardContent style={{ "margin-left": "0px" }} className={cx(sty.ComposeBtns, sty.tsStyle)}>
                                                 <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
                                                     <Typography onClick={changeStyle3} className={cx(sty.tsStyle)}>Can Edit</Typography>
-                                                    <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                                    <ImageListItem className={cx(sty.imgr)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style4 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle3}>
@@ -205,7 +209,7 @@ export default function CalendarWorkSpace() {
                                     </CardContent>
 
                                 </Stack>
-                                <img src={Close} alt="close" loading="lazy" />
+                                <img src={Close} className={cx(sty.imgStyle)} alt="close" loading="lazy" />
                             </ImageListItem>
                         </CardContent>
                         <Stack>
@@ -213,8 +217,8 @@ export default function CalendarWorkSpace() {
                         </Stack>
                         <Stack>
                             <CardContent className={cx(sty.signIn, sty.rel, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
-                                <img src={Close} alt="close" loading="lazy" />
-                                <input onClick={changeStyle2} type="text" placeholder='Invite User by Email' name="Cal" id="Cal" />
+                                <img src={search}  alt="close" loading="lazy" />
+                                <input onClick={changeStyle2} className={cx(sty.imgr)} type="text" placeholder='Invite User by Email' name="Cal" id="Cal" />
                                 <Stack className={style3 ? cx(sty.ddd, sty.abs, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                     <CardContent className={cx(sty.padding0, sty.flexWS)}>
                                         <CardContent style={{ "width": "100%", "display": "flex", "justify-content": "start", "align-items": "center", "padding": "0px", "margin-bottom": "20px" }} ClassName={cx(sty.userInfo, sty.tmsmStyle, sty.padding0)}>
@@ -226,7 +230,7 @@ export default function CalendarWorkSpace() {
                                                     <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
                                                         Full Name
                                                     </Typography>
-                                                    <Typography variant="h6" className={cx(sty.en, sty.tmsmStyle)}>
+                                                    <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
                                                         Email of user
                                                     </Typography>
                                                 </CardContent>
@@ -243,7 +247,7 @@ export default function CalendarWorkSpace() {
                                                     <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
                                                         Full Name
                                                     </Typography>
-                                                    <Typography variant="h6" className={cx(sty.en, sty.tmsmStyle)}>
+                                                    <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
                                                         Email of user
                                                     </Typography>
                                                 </CardContent>
@@ -266,14 +270,14 @@ export default function CalendarWorkSpace() {
                                                 <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
                                                     Full Name
                                                 </Typography>
-                                                <Typography variant="h6" className={cx(sty.en, sty.tmsmStyle)}>
+                                                <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
                                                     Email of user
                                                 </Typography>
                                             </CardContent>
                                             <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
                                                 <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
                                                     <Typography onClick={changeStyle3} className={cx(sty.tsStyle)}>Can Edit</Typography>
-                                                    <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                                    <ImageListItem className={cx(sty.imgr)}><img src={style4 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style4 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle3}>
@@ -315,14 +319,14 @@ export default function CalendarWorkSpace() {
                                                 <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
                                                     Full Name
                                                 </Typography>
-                                                <Typography variant="h6" className={cx(sty.en, sty.tmsmStyle)}>
+                                                <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
                                                     Email of user
                                                 </Typography>
                                             </CardContent>
                                             <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
                                                 <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
                                                     <Typography onClick={changeStyle4} className={cx(sty.tsStyle)}>Can Edit</Typography>
-                                                    <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                                    <ImageListItem className={cx(sty.imgr)}><img src={style5 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style5 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle4}>
@@ -357,14 +361,14 @@ export default function CalendarWorkSpace() {
                                                 <Typography variant="h5" className={cx(sty.fn, sty.tmsmStyle)}>
                                                     Full Name
                                                 </Typography>
-                                                <Typography variant="h6" className={cx(sty.en, sty.tmsmStyle)}>
+                                                <Typography variant="h6" className={cx(sty.en, sty.tssStyle)}>
                                                     Email of user
                                                 </Typography>
                                             </CardContent>
                                             <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
                                                 <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
                                                     <Typography onClick={changeStyle4} className={cx(sty.tsStyle)}>Can Edit</Typography>
-                                                    <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                                    <ImageListItem className={cx(sty.imgr)}><img src={style5 ? dau : dad} alt="hero" /></ImageListItem>
                                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                                         <Stack className={style5 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle4}>
@@ -401,7 +405,7 @@ export default function CalendarWorkSpace() {
                             <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
                                 <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
                                     <Typography onClick={changeStyle5} className={cx(sty.tsStyle)}>Anyone</Typography>
-                                    <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                    <ImageListItem className={cx(sty.imgr)}><img src={style6 ? dau : dad} alt="hero" /></ImageListItem>
                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                         <Stack className={style6 ? cx(sty.ddd, sty.abss, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle5}>
@@ -421,7 +425,7 @@ export default function CalendarWorkSpace() {
                             <CardContent className={cx(sty.ComposeBtns, sty.tsStyle)}>
                                 <CardContent className={cx(sty.ComposeBtns, sty.borderStyle, sty.tsStyle)}>
                                     <Typography onClick={changeStyle4} className={cx(sty.tsStyle)}>Can Edit</Typography>
-                                    <ImageListItem className={cx(sty.imgr)}><img src={Close} alt="hero" /></ImageListItem>
+                                    <ImageListItem className={cx(sty.imgr)}><img src={style5 ? dau : dad} alt="hero" /></ImageListItem>
                                     <Stack className={cx(sty.tsStyle, sty.rel)}>
                                         <Stack className={style5 ? cx(sty.ddd, sty.absf, sty.padding0) : cx(sty.ddd, sty.abs, sty.padding0, sty.spanHide)}>
                                             <CardContent className={cx(sty.users, sty.padding0, sty.tsStyle)} onClick={changeStyle4}>

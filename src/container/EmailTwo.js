@@ -221,7 +221,7 @@ function EmailTwo() {
                 <ImageListItem><img src={link} alt="hero" className={style3 ? cx(sty.bg) : ''} onClick={changeStyle2}/></ImageListItem>
                 <CardContent className={style3 ? cx(sty.hoveroutStyle,sty.spanShow) : cx(sty.hoveroutStyle,sty.spanHide)}>
                   <CardContent className={cx(sty.hoverStyle,sty.comex)}>
-                    <CardContent className={cx(sty.hoverBody,sty.comBtn)} style={{"padding":"14px !important"}}>
+                    <CardContent style={{"padding":"14px !important"}} className={cx(sty.hoverBody,sty.comBtn)} >
                       <input placeholder="Https://" className={cx(sty.borderStyle)} type="text" name="link" id="link" />
                       <CardContent className={cx(sty.btnStyle)} style={{"margin-top":"25px"}}>
                         <button className={cx(sty.btnStyles)} onClick={changeStyle2}> Add Link </button>
@@ -249,13 +249,13 @@ function EmailTwo() {
                 <ImageListItem><img src={LD} alt="hero" /></ImageListItem>
                 <CardContent className={style4 ? cx(sty.hoveroutStyle,sty.spanShow) : cx(sty.hoveroutStyle,sty.spanHide)}>
                   <CardContent className={cx(sty.hoverStyle,sty.comexx)}>
-                    <CardContent className={cx(sty.hoverBody,sty.comBtn)}>
+                    <CardContent className={cx(sty.hoverBody,sty.comBtn,sty.als)}>
                     <Typography className={cx(sty.tmStyle)}>Schedule Email</Typography>
                     <CardContent className={cx(sty.datetime,sty.borderStyle,sty.tmStyle)}>
                       <CardContent className={cx(sty.padding0)}>00/00/0000</CardContent>
                       <CardContent className={cx(sty.padding0)}>00:00 AM</CardContent>
                     </CardContent>
-                      <CardContent className={cx(sty.btnStyle)}>
+                      <CardContent className={cx(sty.btnStyle,sty.w100)}>
                         <Button className={cx(sty.btnStyles)} onClick={changeStyle3}> Schedule Now </Button>
                       </CardContent>
                     </CardContent>

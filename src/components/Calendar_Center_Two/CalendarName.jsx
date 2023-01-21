@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageListItem from '@mui/material/ImageListItem';
 import Close from '../img/Close.png';
+import color from '../img/color.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -28,7 +29,7 @@ export default function CalendarName() {
                         <CardActions className={cx(sty.signSec)}>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                                 <input type="text" placeholder='Nickname' name="Cal" id="Cal" />
-                                <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"0px"}}>
+                                <CardContent className={cx(sty.btns,sty.save)} style={{"margin-top":"-4px"}}>
                                     <CardContent className={cx(sty.btnIn, sty.tsStyle, sty.ref,sty.save)}>
                                         <Button size="small" variant="contained" className={cx(sty.tmStyle)}>
                                             Save
@@ -36,7 +37,7 @@ export default function CalendarName() {
                                     </CardContent>
                                 </CardContent>
                                 <input className={cx(sty.colorSelect)} type="color" name="color" id="colors"/>
-                                <label For="colors"><img src={Close} alt="close" loading="lazy" /></label>
+                                <label style={{"align-items": "center","display": "flex","opacity":"70%"}} For="colors"><img src={color} alt="close" loading="lazy" /></label>
                             </CardContent>
                             <CardContent className={cx(sty.btns,sty.ebtns)}>
                             <CardContent style={{ "width": "auto !important" }} className={cx(sty.btnIn, sty.ebtnIn,sty.tsStyle, sty.ref)}>

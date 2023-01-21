@@ -5,6 +5,7 @@ import Close from '../img/Close.png';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
+import logoM from '../img/LogoM.png'
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import cx from 'classnames';
@@ -28,7 +29,7 @@ export default function EnterName() {
                         <CardActions className={cx(sty.signSec)}>
                             <CardContent className={cx(sty.signIn, sty.tmStyle, sty.inputStyle, sty.NickStyle)}>
                             <ImageListItem style={{ "margin-right": "8px" }}>
-                                <img src={Close} alt="close" loading="lazy" />
+                                <img src={logoM} alt="close" loading="lazy" />
                             </ImageListItem>
                                 <input type="text" placeholder='Enter Calendar Name' name="name" id="name" />
                             </CardContent>
