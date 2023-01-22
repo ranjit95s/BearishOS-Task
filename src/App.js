@@ -7,7 +7,7 @@
 // import CalendarComp2One from './container/CalendarComp2One'
 // import WorkSpaceCS from './container/WorkSpaceCS'
 import CalendarComp3 from './container/CalendarComp3'
-// import VideoCenterOne from './container/VideoCenterOne'
+import VideoCenterOne from './container/VideoCenterOne'
 import './App.css';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       {/* <CalendarComp2One /> */}
       {/* <WorkSpaceCS /> */}
       <CalendarComp3 />
-      {/* <VideoCenterOne /> */}
+      <VideoCenterOne />
     </div>
   );
 }

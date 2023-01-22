@@ -6,16 +6,37 @@
 
 .boxWH {
     width: 350px;
-    min-height:525px;
-    max-height:650px;
+    min-height: 525px;
+    max-height: 650px;
+    height: max-content;
+}
+.boxWH2 {
+    width: 375px;
+    min-height: 475px;
+    max-height: 475px;
+    height: max-content;
 }
 
 .boxIn {
     width: 325px;
+    height: max-content;
+}
+.boxIn2 {
+    width: 350px;
+    height: max-content;
 }
 
 .mar {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.sajmn {
+    text-align: left;
+font: normal normal 600 15px/21px Source Serif Pro;
+letter-spacing: 0px;
+color: #5EE2A0;
+margin-bottom: 18px;
+opacity: 1;
 }
 
 .mtm {
@@ -30,14 +51,67 @@ color: #000000  !important;
 opacity: 0.5  !important;
 }
 
+.t615211{
+    font: normal normal 600 15px/21px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
 .mainStack {
     display:flex;
     flex-direction: row;
 }
 
+.addTime {
+    font: normal normal 300 11px/15px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.top2 {
+    top:2rem;
+}
+
+.conn button{
+    width: 2px;
+    height: 20px !important;
+    font-size: 11px !important;
+    font-weight: 300 !important;
+    margin-top: 10px;
+    justify-content: center;
+        /* font-size: 15px !important; */
+        width: 20px !important;
+        /* height: 28px !important; */
+        overflow: hidden;
+        /* font-weight: 700 !important; */
+        position: relative;
+        margin-right: 0px !important;
+        top: -3px;
+}
+
+.w25{
+    width: 15px;
+    height: 16px !important;
+    margin-right: 3px;
+    /* margin-top: 10px; */
+}
+
+.w25 img { object-fit: none !important;}
+
+.mb5{
+    margin-bottom:5px;
+}
+
 .iconCard {
     padding:0px !important;
     margin-right:30px;
+}
+
+.iconCard2{
+    padding:0px !important;
+    margin-right:10px;
 }
 
 .iconW {
@@ -46,6 +120,14 @@ opacity: 0.5  !important;
 
 .tmr {
     margin-right:15px;
+}
+
+.tml {
+    margin-left:41px;
+}
+
+.op05{
+    opacity: 0.5;
 }
 
 .dateTimeFlex {
@@ -57,8 +139,36 @@ opacity: 0.5  !important;
     
 }
 
+.org { margin-top:5px;}
+
+.picTU {
+        padding: 5px !important;
+    border-radius: 50%;
+    /* font-weight: 700 !important; */
+    border: 1px solid #dfdfdf;
+    margin-right:5px;
+}
+
+.t31216 {
+    font: normal normal 300 12px/16px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.tnnn1521 {
+    font: normal normal normal 15px/21px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
 .mr{
     margin-right: 20px;
+}
+
+.mr5 {
+    margin-right: 5px;
 }
 
 .jcs {
@@ -69,10 +179,31 @@ opacity: 0.5  !important;
     justify-content:end;
     align-items: center;
 }
+.jcsb {
+    justify-content:space-between;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border: 3px solid #E9EDF2;
+border-radius: 5px;
+opacity: 1;
+padding: 4px !important;
+}
+
+.conf {
+    display: flex;
+    padding: 0px;
+    padding-bottom: 0px !important;
+}
 
 .mt10 {
 margin-top:11px;
 }
+
+.mt16 {
+    margin-top:16px;
+    }
+    
 
 .saved button{
     font-size: 15px !important;
@@ -109,4 +240,12 @@ margin-top:11px;
     width: 100%;
     resize: none;
     border: none !important;
+}
+
+.t31521 {
+    text-align: left;
+font: normal normal 300 15px/21px Source Serif Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
 }
